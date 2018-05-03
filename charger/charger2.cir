@@ -1,0 +1,25 @@
+* /home/krzy0s/kicad/charger/charger.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: śro, 2 maj 2018, 17:22:07
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+XU2  8 7 3 LM317AT		
+R3  7 6 240		
+R4  6 5 2k78		
+R5  5 0 1		
+Rw1  4 5 25m		
+Q1  8 5 0 BC548		
+C4  7 5 C		
+XU1  1 0 2 10 10 LM2731YMF		
+C1  10 0 2u2		
+C2  3 2 220p		
+C3  3 0 4u7		
+R1  2 0 13k3		
+R2  3 2 181k3		
+D1  3 1 1N5820		
+L1  10 1 10u		
+
+.end

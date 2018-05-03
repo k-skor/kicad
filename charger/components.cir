@@ -1,0 +1,10 @@
+
+.include libs/LM2731Y_TRANS.LIB
+.include ../kicad-symbols/Diode.lib
+.include ../kicad-symbols/Transistor.lib
+
+# 1 9 2 10 10 LM2731YMF
+# .SUBCKT LM2731Y_TRANS VIN SHDN_N SW FB GND
+.subckt LM2731YMF 1 2 3 4 5
+  XU1 5 4 1 3 2 LM2731Y_TRANS
+.ends LM2731YMF

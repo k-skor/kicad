@@ -1,0 +1,28 @@
+
+.INCLUDE library/LM741.MOD
+
+* 1 2 3 PWR_IN
+*              + g -
+.subckt PWR_IN 1 2 3
+  Vpos 1 2 12V
+  Vneg 2 3  12V
+.ends PWR_IN
+
+* ? 8 4 3 ? 6 1 LM741
+* connections:      non-inverting input
+*                   |   inverting input
+*                   |   |   positive power supply
+*                   |   |   |   negative power supply
+*                   |   |   |   |   output
+*                   |   |   |   |   |
+*                   |   |   |   |   |
+*.SUBCKT LM741/NS   1   2  99  50  28
+*             ? - + n ? o p
+.subckt LM741 1 2 3 4 5 6 7
+  XOPAMP 3 2 7 4 6 LM741/NS
+.ends LM741
+
+*              I 0
+.subckt SRC_IN 1 2
+  Vin 1 2 1V
+.ends SRC_IN

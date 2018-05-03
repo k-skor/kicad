@@ -1,0 +1,11 @@
+* Components and subcircuits for use in spicedemo.cir
+
+.INCLUDE LM317_TRANS.LIB
+
+* 4 3 5 LM317AEMP
+*             o - + p n
+.subckt LM317 
+  * PINOUT ORDER  1   3   6  2  4   5
+  * PINOUT ORDER +IN -IN +V -V OUT NSD
+  XU1 3 2 4 5 1 NSD LMV981
+.ends LM317

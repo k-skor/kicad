@@ -1,0 +1,18 @@
+* /home/krzy0s/snap/kicad-snap/common/linear_stabilizer_12v/linear_stabilizer_12v.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: nie, 25 cze 2017, 14:14:38
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+V1  5 1 15		
+Q1  4 2 1 BC548		
+R1  3 4 120		
+R2  4 2 1k		
+R3  2 1 2k		
+R4  3 2 R		
+C1  5 1 100uF		
+XU1  4 3 5 LM317AEMP		
+
+.end

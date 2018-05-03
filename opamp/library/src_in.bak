@@ -1,0 +1,19 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# SRC_IN
+#
+DEF SRC_IN J 0 40 Y Y 1 F N
+F0 "J" -250 -200 60 H V C CNN
+F1 "SRC_IN" 0 0 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+C 0 -200 50 0 1 0 N
+C 0 -200 141 0 1 0 N
+X VIN 1 200 -200 200 L 50 50 1 1 P
+X GND 2 200 -350 200 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

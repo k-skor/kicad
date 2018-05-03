@@ -1,0 +1,18 @@
+* /home/krzy0s/snap/kicad-snap/common/sim_test/sim_test.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: sob, 24 cze 2017, 22:07:16
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+C1  /N1 0 100uF		
+V1  /N0 0 5		
+R1  /N0 /N1 100		
+
+.control
+tran 100us 50ms uic
+plot "/n0" "/n1"
+.endc
+
+.end

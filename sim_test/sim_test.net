@@ -1,0 +1,11 @@
+( { EESchema Netlist Version 1.1 created  pią, 23 cze 2017, 11:05:36 }
+ ( /594B9CA6 $noname  C1 1nF
+  (    1 /n0 )
+  (    2 0 )
+ )
+ ( /594B9D08 $noname  V1 5
+  (    1 /n0 )
+  (    2 0 )
+ )
+)
+*

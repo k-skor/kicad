@@ -1,0 +1,240 @@
+EESchema Schematic File Version 2
+LIBS:pspice
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:linear_stabilizer_12v-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L VSOURCE V1
+U 1 1 594ECC18
+P 1500 2800
+F 0 "V1" H 1500 2700 50  0000 C CNN
+F 1 "15" H 1500 2900 50  0000 C CNN
+F 2 "" H 1500 2800 50  0000 C CNN
+F 3 "" H 1500 2800 50  0000 C CNN
+	1    1500 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0 #GND01
+U 1 1 594ECDBF
+P 1500 3800
+F 0 "#GND01" H 1500 3700 50  0001 C CNN
+F 1 "0" H 1500 3730 50  0000 C CNN
+F 2 "" H 1500 3800 50  0000 C CNN
+F 3 "" H 1500 3800 50  0000 C CNN
+	1    1500 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0 #GND02
+U 1 1 594ECE25
+P 900 3800
+F 0 "#GND02" H 900 3700 50  0001 C CNN
+F 1 "0" H 900 3730 50  0000 C CNN
+F 2 "" H 900 3800 50  0000 C CNN
+F 3 "" H 900 3800 50  0000 C CNN
+	1    900  3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 594ECE3F
+P 900 3500
+F 0 "#FLG03" H 900 3595 50  0001 C CNN
+F 1 "PWR_FLAG" H 900 3680 50  0000 C CNN
+F 2 "" H 900 3500 50  0000 C CNN
+F 3 "" H 900 3500 50  0000 C CNN
+	1    900  3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC548 Q1
+U 1 1 594ECF4A
+P 3900 3500
+F 0 "Q1" H 4100 3575 50  0000 L CNN
+F 1 "BC548" H 4100 3500 50  0000 L CNN
+F 2 "TO-92" H 4100 3425 50  0000 L CIN
+F 3 "" H 3900 3500 50  0000 L CNN
+	1    3900 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 594ED00C
+P 4800 2450
+F 0 "R1" V 4880 2450 50  0000 C CNN
+F 1 "120" V 4800 2450 50  0000 C CNN
+F 2 "" H 4800 2450 50  0000 C CNN
+F 3 "" H 4800 2450 50  0000 C CNN
+	1    4800 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 594ED079
+P 4800 3150
+F 0 "R2" V 4880 3150 50  0000 C CNN
+F 1 "1k" V 4800 3150 50  0000 C CNN
+F 2 "" H 4800 3150 50  0000 C CNN
+F 3 "" H 4800 3150 50  0000 C CNN
+	1    4800 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 594ED0E2
+P 4800 3850
+F 0 "R3" V 4880 3850 50  0000 C CNN
+F 1 "2k" V 4800 3850 50  0000 C CNN
+F 2 "" H 4800 3850 50  0000 C CNN
+F 3 "" H 4800 3850 50  0000 C CNN
+	1    4800 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 594ED15B
+P 5400 2850
+F 0 "R4" V 5480 2850 50  0000 C CNN
+F 1 "R" V 5400 2850 50  0000 C CNN
+F 2 "" H 5400 2850 50  0000 C CNN
+F 3 "" H 5400 2850 50  0000 C CNN
+	1    5400 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  3800 900  3500
+Wire Wire Line
+	1500 3800 1500 3500
+Wire Wire Line
+	1500 2100 3400 2100
+Wire Wire Line
+	3800 2400 3800 3300
+$Comp
+L 0 #GND04
+U 1 1 594ED254
+P 3800 4300
+F 0 "#GND04" H 3800 4200 50  0001 C CNN
+F 1 "0" H 3800 4230 50  0000 C CNN
+F 2 "" H 3800 4300 50  0000 C CNN
+F 3 "" H 3800 4300 50  0000 C CNN
+	1    3800 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0 #GND05
+U 1 1 594ED276
+P 4800 4300
+F 0 "#GND05" H 4800 4200 50  0001 C CNN
+F 1 "0" H 4800 4230 50  0000 C CNN
+F 2 "" H 4800 4300 50  0000 C CNN
+F 3 "" H 4800 4300 50  0000 C CNN
+	1    4800 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 594ED298
+P 2700 3050
+F 0 "C1" V 2800 3200 50  0000 C CNN
+F 1 "100uF" V 2800 2900 50  0000 C CNN
+F 2 "" H 2700 3050 50  0000 C CNN
+F 3 "" H 2700 3050 50  0000 C CNN
+	1    2700 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0 #GND06
+U 1 1 594ED317
+P 2700 3800
+F 0 "#GND06" H 2700 3700 50  0001 C CNN
+F 1 "0" H 2700 3730 50  0000 C CNN
+F 2 "" H 2700 3800 50  0000 C CNN
+F 3 "" H 2700 3800 50  0000 C CNN
+	1    2700 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 3800 2700 3300
+Wire Wire Line
+	2700 2800 2700 2100
+Connection ~ 2700 2100
+Wire Wire Line
+	3800 4300 3800 3700
+Wire Wire Line
+	4800 4300 4800 4100
+Wire Wire Line
+	4800 3600 4800 3400
+Wire Wire Line
+	4800 2900 4800 2700
+Wire Wire Line
+	4200 2100 5400 2100
+Wire Wire Line
+	5400 3100 5400 3500
+Wire Wire Line
+	5400 3500 4100 3500
+Connection ~ 4800 3500
+Wire Wire Line
+	4800 2800 3800 2800
+Connection ~ 3800 2800
+Connection ~ 4800 2800
+Wire Wire Line
+	4800 2200 4800 2100
+Connection ~ 4800 2100
+Wire Wire Line
+	5400 2100 5400 2600
+Text Label 5400 2100 0    60   ~ 0
+N0
+$Comp
+L LM317AEMP U1
+U 1 1 594ED91E
+P 3800 2150
+F 0 "U1" H 3600 2350 50  0000 C CNN
+F 1 "LM317AEMP" H 3800 2350 50  0000 L CNN
+F 2 "SOT-223" H 3800 2250 50  0000 C CIN
+F 3 "" H 3800 2150 50  0000 C CNN
+	1    3800 2150
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
