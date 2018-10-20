@@ -1,0 +1,38 @@
+* /home/krzy0s/kicad/step-up_converter/step-up_converter.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: pią, 10 sie 2018, 22:42:16
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+.include components.cir
+.include common.cir
+
+* Sheet Name: /
+XU1  7 0 1 5 5 LM2731YMF		
+C1  5 0 2u2		
+C2  3 1 150p		
+C3  3 0 4u7		
+R1  1 0 13k3		
+R2  3 1 181k3		
+L1  5 4 10u		
+Vmessw 4 7 dc 0
+*D1  3 4 Dmbr0520lt1		
+XU2  3 4 MBR0520LT		
+R3  6 3 5		
+Vmesload 6 0 dc 0
+
+VCC 5 0 12
+
+*.op
+*.ic V(5)=0
+.control
+*set ngbehavior=ps
+*tran 0.01us 10us uic
+
+*plot v(1) v(3) v(5)
+*plot i(L1) i(Vmess)
+*plot v(5) - v(4)
+.endc
+
+.end

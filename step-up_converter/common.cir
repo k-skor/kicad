@@ -1,0 +1,7 @@
+
+.func if(x, y, z) 'ternary_fcn(x, y, z)'
+*.func limit(x, y, z) {min(max(x, min(y, z)), max(z, y))}
+.func LIMIT(x,a,b) {min(max(x, a), b)}
+.func PWR(x,a) {abs(x) ** a}
+.func PWRS(x,a) {sgn(x) * PWR(x,a)}
+.func stp(x) {u(x)}
