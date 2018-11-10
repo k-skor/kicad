@@ -1,0 +1,22 @@
+* /home/krzy0s/kicad/voltage_regulator/voltage_regulator.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: czw, 3 maj 2018, 16:44:28
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+.include components.cir
+
+* Sheet Name: /
+XU2  1 4 6 LM317AT		
+R3  4 2 240		
+R4  2 5 2k78		
+R5  5 0 1		
+Q1  1 5 0 BC548		
+C4  4 5 100u		
+
+Vcc 6 0 18
+
+.op
+
+.end

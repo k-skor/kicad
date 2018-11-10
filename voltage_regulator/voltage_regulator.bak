@@ -1,0 +1,229 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Diode
+LIBS:Transistor
+LIBS:dc-dc
+LIBS:pspice
+LIBS:voltage_regulator-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM317AT U2
+U 1 1 5A1DDC82
+P 5400 2000
+F 0 "U2" H 5200 2200 50  0000 C CNN
+F 1 "LM317AT" H 5400 2200 50  0000 L CNN
+F 2 "TO-220" H 5400 2100 50  0000 C CIN
+F 3 "" H 5400 2000 50  0000 C CNN
+	1    5400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5A230518
+P 6000 2200
+F 0 "R3" V 6080 2200 50  0000 C CNN
+F 1 "240" V 6000 2200 50  0000 C CNN
+F 2 "" V 5930 2200 50  0000 C CNN
+F 3 "" H 6000 2200 50  0000 C CNN
+	1    6000 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5A230567
+P 6000 2700
+F 0 "R4" V 6080 2700 50  0000 C CNN
+F 1 "2k78" V 6000 2700 50  0000 C CNN
+F 2 "" V 5930 2700 50  0000 C CNN
+F 3 "" H 6000 2700 50  0000 C CNN
+	1    6000 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5A23067D
+P 6000 3450
+F 0 "R5" V 6080 3450 50  0000 C CNN
+F 1 "1" V 6000 3450 50  0000 C CNN
+F 2 "" V 5930 3450 50  0000 C CNN
+F 3 "" H 6000 3450 50  0000 C CNN
+	1    6000 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR01
+U 1 1 5A230689
+P 7900 3800
+F 0 "#PWR01" H 7900 3650 50  0001 C CNN
+F 1 "VCC" H 7900 3950 50  0000 C CNN
+F 2 "" H 7900 3800 50  0000 C CNN
+F 3 "" H 7900 3800 50  0000 C CNN
+	1    7900 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 5A2306A5
+P 7900 4100
+F 0 "#FLG02" H 7900 4195 50  0001 C CNN
+F 1 "PWR_FLAG" H 7900 4280 50  0000 C CNN
+F 2 "" H 7900 4100 50  0000 C CNN
+F 3 "" H 7900 4100 50  0000 C CNN
+	1    7900 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 5A2306ED
+P 8300 3800
+F 0 "#FLG03" H 8300 3895 50  0001 C CNN
+F 1 "PWR_FLAG" H 8300 3980 50  0000 C CNN
+F 2 "" H 8300 3800 50  0000 C CNN
+F 3 "" H 8300 3800 50  0000 C CNN
+	1    8300 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC548 Q1
+U 1 1 5A231773
+P 5500 3150
+F 0 "Q1" H 5700 3225 50  0000 L CNN
+F 1 "BC548" H 5700 3150 50  0000 L CNN
+F 2 "TO-92" H 5700 3075 50  0000 L CIN
+F 3 "" H 5500 3150 50  0000 L CNN
+	1    5500 3150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 5A231AA0
+P 6400 2500
+F 0 "C4" H 6425 2600 50  0000 L CNN
+F 1 "100u" H 6425 2400 50  0000 L CNN
+F 2 "" H 6438 2350 50  0000 C CNN
+F 3 "" H 6400 2500 50  0000 C CNN
+	1    6400 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0 #GND04
+U 1 1 5A304E5B
+P 8300 4200
+F 0 "#GND04" H 8300 4100 50  0001 C CNN
+F 1 "0" H 8300 4130 50  0000 C CNN
+F 2 "" H 8300 4200 50  0000 C CNN
+F 3 "" H 8300 4200 50  0000 C CNN
+	1    8300 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0 #GND05
+U 1 1 5A304EC9
+P 5400 3900
+F 0 "#GND05" H 5400 3800 50  0001 C CNN
+F 1 "0" H 5400 3830 50  0000 C CNN
+F 2 "" H 5400 3900 50  0000 C CNN
+F 3 "" H 5400 3900 50  0000 C CNN
+	1    5400 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3800 7900 4100
+Wire Wire Line
+	8300 3800 8300 4200
+Wire Wire Line
+	5400 2250 5400 2950
+Wire Wire Line
+	5400 3350 5400 3900
+Wire Wire Line
+	5800 1950 6900 1950
+Wire Wire Line
+	6000 1950 6000 2050
+Connection ~ 6000 1950
+Wire Wire Line
+	6000 2350 6000 2550
+Wire Wire Line
+	6000 2850 6000 3300
+Wire Wire Line
+	6000 3600 6000 3700
+Wire Wire Line
+	6000 3700 5400 3700
+Connection ~ 5400 3700
+Wire Wire Line
+	5700 3150 6900 3150
+Connection ~ 6000 3150
+Wire Wire Line
+	6400 1950 6400 2350
+Connection ~ 6400 1950
+Wire Wire Line
+	6400 2650 6400 3150
+Connection ~ 6400 3150
+Wire Notes Line
+	4300 1550 7600 1550
+Wire Notes Line
+	7600 1550 7600 4200
+Wire Notes Line
+	7600 4200 4300 4200
+Wire Notes Line
+	4300 4200 4300 1550
+Text Label 6500 1950 0    60   ~ 0
+OUTPUT_14.4V_P
+Connection ~ 6900 1950
+Connection ~ 6900 3150
+Text Label 6550 3150 0    60   ~ 0
+OUTPUT_14.4V_N
+$Comp
+L VCC #PWR06
+U 1 1 5AEB2A31
+P 4700 1950
+F 0 "#PWR06" H 4700 1800 50  0001 C CNN
+F 1 "VCC" H 4700 2100 50  0000 C CNN
+F 2 "" H 4700 1950 50  0001 C CNN
+F 3 "" H 4700 1950 50  0001 C CNN
+	1    4700 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4700 1950 5000 1950
+$EndSCHEMATC
