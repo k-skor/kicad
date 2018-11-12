@@ -1,22 +1,13 @@
-* /home/krzy0s/kicad/voltage_regulator/voltage_regulator.cir
-
-* EESchema Netlist Version 1.1 (Spice format) creation date: czw, 3 maj 2018, 16:44:28
-
-* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
-* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
-
-.include components.cir
-
-* Sheet Name: /
-XU2  1 4 6 LM317AT		
-R3  4 2 240		
-R4  2 5 2k78		
-R5  5 0 1		
-Q1  1 5 0 BC548		
-C4  4 5 100u		
-
-Vcc 6 0 18
-
-.op
-
+.title KiCad schematic
+.include "libs/BC548C.lib"
+.include "libs/LM317A_TRANS.LIB"
+.include "power.cir"
+XU1 VCC Net-_Q1-Pad1_ /OUTPUT_14V4_P LM317A_TRANS
+R1 /OUTPUT_14V4_P Net-_R1-Pad2_ 240
+R2 Net-_R1-Pad2_ /OUTPUT_14V4_N 2k78
+R3 /OUTPUT_14V4_N 0 1
+C1 /OUTPUT_14V4_P /OUTPUT_14V4_N 100u
+Q1 Net-_Q1-Pad1_ /OUTPUT_14V4_N 0 BC548C
+XP1 VCC 0 PWR_IN
+.tran 10u 200u uic
 .end
