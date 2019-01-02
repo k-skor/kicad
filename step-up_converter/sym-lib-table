@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name step-up_converter-rescue)(type Legacy)(uri ${KIPRJMOD}/step-up_converter-rescue.lib)(options "")(descr "")(disabled))
+  (lib (name power1)(type Legacy)(uri /home/krzy0s/kicad/kicad-symbols/power.lib)(options "")(descr "")(disabled))
+  (lib (name 74xx1)(type Legacy)(uri /home/krzy0s/kicad/kicad-symbols/74xx.lib)(options "")(descr "")(disabled))
+  (lib (name pspice1)(type Legacy)(uri /home/krzy0s/kicad/kicad-symbols/pspice.lib)(options "")(descr "")(disabled))
+  (lib (name Diode1)(type Legacy)(uri /home/krzy0s/kicad/kicad-symbols/Diode.lib)(options "")(descr "")(disabled))
+  (lib (name MBR0520LT_M)(type Legacy)(uri /home/krzy0s/kicad/my-symbols/MBR0520LT_M.lib)(options "")(descr "")(disabled))
+)
