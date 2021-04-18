@@ -1,9 +1,0 @@
-
-.include libs/LM317A_TRANS.LIB
-.include ../kicad-symbols/Transistor.lib
-
-# 4 8 5 LM317AT
-# .SUBCKT LM317A_TRANS IN ADJ OUT
-.subckt LM317AT 1 2 3
-  XU2 3 1 2 LM317A_TRANS
-.ends LM317AT
