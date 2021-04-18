@@ -1,7 +1,7 @@
 .title KiCad schematic
-.include "libs/BC548C.lib"
-.include "libs/LM317A_TRANS.LIB"
 .include "power.cir"
+.include "spice\BC548C.lib"
+.include "spice\LM317A_TRANS.LIB"
 XU1 VCC /TRANSISTOR_UCE /OUTPUT_14V4_P LM317A_TRANS
 R1 /OUTPUT_14V4_P /TRANSISTOR_UCE 240
 R2 /TRANSISTOR_UCE /OUTPUT_14V4_N 2.55k
@@ -11,5 +11,5 @@ XP1 VCC 0 PWR_IN
 R4 /OUTPUT_14V4_P /OUTPUT_14V4_N 30
 C1 VCC 0 0.1u
 C2 /OUTPUT_14V4_P /OUTPUT_14V4_N 1u
-.tran 10us 1ms uic
+.tran 10us 1ms uic 
 .end

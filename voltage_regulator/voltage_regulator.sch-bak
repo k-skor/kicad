@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:voltage_regulator-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -45,7 +46,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 5400 1950 50  0001 C CNN
 F 4 "X" H 5400 1950 50  0001 C CNN "Spice_Primitive"
 F 5 "LM317A_TRANS" H 5400 1950 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 5400 1950 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "spice\\LM317A_TRANS.LIB" H 5400 1950 50  0001 C CNN "Spice_Lib_File"
+F 7 "libs/LM317A_TRANS.LIB" H 5400 1950 50  0001 C CNN "Spice_Lib_File"
 F 8 "3 1 2" H 5400 1950 50  0001 C CNN "Spice_Node_Sequence"
 	1    5400 1950
 	1    0    0    -1  
@@ -170,7 +171,7 @@ F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 5500 3150 50  0001 L CNN
 F 4 "Q" H 5500 3150 50  0001 C CNN "Spice_Primitive"
 F 5 "BC548C" H 5500 3150 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 5500 3150 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "spice\\BC548C.lib" H 5500 3150 50  0001 C CNN "Spice_Lib_File"
+F 7 "libs/BC548C.lib" H 5500 3150 50  0001 C CNN "Spice_Lib_File"
 	1    5500 3150
 	-1   0    0    -1  
 $EndComp
